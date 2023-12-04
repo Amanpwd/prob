@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Masai School Application</h1>
+  <p>Enter Your name and gender to apply for masai school</p>
+  <h2 id="display">Display entered name and gender here</h2>
+  <hr>
+  <input type="text" id ="name" placeholder="Enter your name">
+  <select id="gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+  <button onclick="Clicked()">Apply</button>
+</body>
+</html>
+<script>
+  let inputtag = document.getElementById("name")
+  let selecttag = document.getElementById("gender")
+  function Clicked()
+  {
+    let htag = document.getElementById("display")
+    htag.innerText = inputtag.value + " " + selecttag.value
+    console.log(inputtag.value);
+    console.log(selecttag.value)
+  }
+</script>
