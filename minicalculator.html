@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+    <style>
+        #parent{
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+<body id="parent">
+    <h1 style="color: black;text-align: center;">Mini Calculator</h1>
+    <input type="number" id="text1" placeholder="Please Enter 1st Number">
+    <input type="number" id="text2" placeholder="Please Enter 2nd Number">
+    <br>
+    <button onclick="Add()">Addition</button> &nbsp; <button onclick="Sub()">Subtract</button> &nbsp; <button onclick="Mul()">Multiply</button> &nbsp; <button onclick="Div()">Divide</button>
+
+</body>
+</html>
+<script>
+    let inputtag1 = document.getElementById("text1")
+    let inputtag2 = document.getElementById("text2")
+
+    function Add()
+    {
+        
+        alert(Number(inputtag1.value) + Number(inputtag2.value))
+
+    }
+    function Sub()
+    {
+        alert(Number(inputtag1.value) - Number(inputtag2.value))
+    }
+    function Mul()
+    {
+        alert(Number(inputtag1.value) * Number(inputtag2.value))
+    }
+    function Div()
+    {
+        alert(Number(inputtag1.value) / Number(inputtag2.value))
+    }
+
+</script>
